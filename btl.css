@@ -1,0 +1,486 @@
+body {
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    line-height: 4em;
+}
+
+.header-menu--a {
+    color: black;
+}
+
+.header-img--car {
+    width: auto;
+    height: 3em;
+    padding: 10px;
+    margin-left: 2em;
+}
+
+.header-menu--ul {
+    display: flex;
+    margin-right: 2em;
+}
+
+.header-menu--ul--icon,
+.header-menu--ul--icon2 {
+    margin-right: 2em;
+}
+
+.header-menu--ul--icon,
+.header-menu--ul--icon2:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.header-menu--a {
+    white-space: nowrap;
+}
+
+.header-menu--a:hover {
+    color: orange;
+    transition: color .2s ease-out;
+}
+
+.menu-con {
+    background-color: #3f3f3f;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    line-height: 41px;
+    display: none;
+    z-index: 2;
+}
+
+.header-menu--ul--icon2:hover .menu-con {
+    animation: time 0.3s ease-in;
+    display: block;
+}
+
+.menu-con li a {
+    color: #fff;
+}
+
+.menu-con li {
+    display: inline-block;
+    padding-left: 12px;
+    width: 190px;
+}
+
+.menu-con li:hover {
+    background-color: #6d6b6b;
+    cursor: pointer;
+}
+
+@keyframes time {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* search */
+
+.search {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Range-Rover-Sport.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: 50% 50%, 50% 58%;
+}
+
+.search form .inner-form {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-wrap {
+    display: flex;
+    background-color: #d9f1e3;
+    width: 500px;
+    min-height: 50px;
+    border-bottom-left-radius: 34px;
+    border-top-left-radius: 34px;
+    border: none;
+}
+
+.search-btn {
+    color: #fff;
+    font-size: 12px;
+    background-color: #00ad5f;
+    outline: none;
+    border: none;
+    height: 54px;
+    width: 100px;
+    border-bottom-right-radius: 34px;
+    border-top-right-radius: 34px;
+}
+
+
+/* price car */
+
+.container {
+    height: 1890px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://img.thuthuattinhoc.vn/uploads/2019/02/22/hinh-nen-day-nui-bang-chap-chung_013050369.jpg);
+    background-size: auto, cover;
+    background-position: bottom;
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+.price-car {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-price-car {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-car,
+.box-car2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box-car .car:nth-child(1) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Mercedes-Benz-CLA-luon-duoc-danh-gia-cao-ve-dang-ve-hien-dai-the-thao-va-khoe-khoan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car .car:nth-child(2) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/12/Audi-A8-Mau-sieu-xe-hang-sang-khien-dai-gia-Viet-phat-â€œthemâ€.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car .car:nth-child(3) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Xe-BMW-M2-Coupe-2019-xanh-lam-lich-lam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car .car:nth-child(4) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Lexus-Es-250-2019-phien-ban-mau-Ghi-â€“-Mercury-Gray-Mica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* .box-car2 */
+
+.box-car2 .car:nth-child(1) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Land-Rover-Range-Rover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car2 .car:nth-child(2) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/gia-xe-lamborghini-huracan-performante-spyder-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car2 .car:nth-child(3) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://giaxeoto.vn/admin/webroot/img/upload2/bentley-mulsanne-6_75-edition-co-gia-bao-nhieu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box-car2 .car:nth-child(4) {
+    box-sizing: border-box;
+    min-width: 230px;
+    min-height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://tuoitrethudo.com.vn/stores/news_dataimages/tuoitrethudocomvn/082019/12/14/cadillac-escalade-the-he-tiep-theo-se-doi-moi-ra-sao-49-.4404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.car p:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+/* bÃ i viáº¿t */
+
+.container-posts {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.box-posts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.box-icon {
+    width: 250px;
+    height: 250px;
+    border: solid 1px #a5a8a8;
+    margin: 25px 0px 23px 25px;
+}
+
+.box1:nth-child(1) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/mer-an-du.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box1:nth-child(2) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/mer-da-nang.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box1:nth-child(3) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/mer-lang-ha.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box-item {
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.box-posts-text {
+    box-sizing: border-box;
+    width: 130px;
+    height: 38px;
+    border: solid 1px #fff;
+    text-align: center;
+    margin-top: 41px;
+    margin-left: 61px;
+    padding-top: 10px;
+}
+
+.box2:nth-child(1) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/anh-bia-8.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box2:nth-child(2) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/lexus-thang-long-2.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box2:nth-child(3) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://lux.mycar.vn/wp-content/uploads/2020/01/anh-bia-4.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: transform .5s;
+}
+
+.box1:hover,
+.box2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* báº£n Ä‘á»“ */
+
+.advisory {
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.advisory-local {
+    margin-right: 70px;
+}
+
+.border {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.footer {
+    padding: 0px 70px;
+    background-color: #0076a4;
+    display: flex;
+    height: 350px;
+    color: #fff;
+}
+
+.footer-img {
+    width: 250px;
+    height: 80px;
+}
+
+.footer-box,
+.footer-content,
+.footer-follows,
+.footer-Fanpage {
+    flex: 1;
+    margin: 16px 16px;
+}
+
+.icon-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-content-item {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.icon {
+    background-color: #ff7402;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.box-fanpage {
+    margin-top: 10px;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.end2 a {
+    color: black;
+}
+
+.end2 a:hover {
+    color: orange;
+}
