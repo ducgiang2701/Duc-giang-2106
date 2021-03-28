@@ -126,6 +126,7 @@ body {
 }
 
 .search-btn {
+    cursor: pointer;
     color: #fff;
     font-size: 12px;
     background-color: #00ad5f;
@@ -218,7 +219,7 @@ body {
     box-sizing: border-box;
     min-width: 230px;
     min-height: 120px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Lexus-Es-250-2019-phien-ban-mau-Ghi-â€“-Mercury-Gray-Mica.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://lux.mycar.vn/wp-content/uploads/2019/11/Lexus-Es-250-2019-phien-ban-mau-Ghi-am“-Mercury-Gray-Mica.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 99%;
